@@ -28,8 +28,8 @@ def main():
             print("Storage unit created successfully...")
             print("\nInscribing preservation data...")
             for entry, data in enumerate(datas):
-                print(f"[Entry 00{entry}] {data}")
-                f.write(f"[Entry 00{entry}] {data}\n")
+                print(f"[Entry 00{entry + 1}] {data}")
+                f.write(f"[Entry 00{entry + 1}] {data}\n")
             f.close()
             print("\nData inscription complete. Storage unit sealed")
             print("Archive 'new_discovery.txt' ready for "
